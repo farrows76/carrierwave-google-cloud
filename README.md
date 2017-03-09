@@ -1,8 +1,5 @@
-# Carrierwave::Google::Cloud
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+# Carrierwave Google Cloud
+An alternative to fog for connecting Carrierwave to Google Cloud Storage.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -20,9 +17,11 @@ Or install it yourself as:
 ```bash
 $ gem install carrierwave-google-cloud
 ```
+## Usage
+On its way
 
 ## Contributing
-Contribution directions go here.
+This will be out soon too
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
