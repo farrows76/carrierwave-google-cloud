@@ -1,5 +1,5 @@
 # Carrierwave Google Cloud
-An alternative to fog for connecting Carrierwave to Google Cloud Storage.
+An alternative to Fog for connecting Carrierwave to Google Cloud Storage.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -22,6 +22,7 @@ On its way
 
 ## Contributing
 This will be out soon too
+
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

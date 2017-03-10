@@ -10,13 +10,13 @@ module CarrierWave
       end
 
       def store!(file)
-        CarrierWave::Storage::GoogleFile.new(uploader, connectino, uploader.store_path).tap do |google_file|
+        CarrierWave::Storage::GoogleFile.new(uploader, connection, uploader.store_path).tap do |google_file|
           google_file.store(file)
         end
       end
 
       def retrieve!(identifier)
-        CarrierWave::Storage::GoogleFile.new(uploader, connectino, uploader.store_path(identifier)).retrieve
+        CarrierWave::Storage::GoogleFile.new(uploader, connection, uploader.store_path(identifier)).retrieve
       end
 
       def connection
