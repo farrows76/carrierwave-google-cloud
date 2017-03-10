@@ -28,7 +28,7 @@ module CarrierWave
               credentials[:google_project] ||
               ENV['GOOGLE_PROJECT'], credentials[:google_keyfile] ||
               ENV['GOOGLE_KEYFILE']
-            ).storeage
+            ).storage
         end
       end
 
