@@ -6,7 +6,7 @@ require "carrierwave/google/cloud/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "carrierwave-google-cloud"
-  s.version     = Carrierwave::Google::Cloud::VERSION
+  s.version     = CarrierWave::Google::Cloud::VERSION
   s.authors     = ["Steve Farrow"]
   s.email       = ["farrows76@gmail.com"]
   s.homepage    = "https://github.com/farrows76/carrierwave-google-cloud"

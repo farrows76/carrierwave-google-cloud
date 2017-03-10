@@ -1,4 +1,4 @@
-module Carrierwave
+module CarrierWave
   module Google
     module Cloud
       VERSION = '0.1.0'

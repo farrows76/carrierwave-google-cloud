@@ -6,7 +6,7 @@ module CarrierWave
       end
 
       def self.clear_connection_cache!
-        @onnection_cache = {}
+        @connection_cache = {}
       end
 
       def store!(file)

@@ -1,5 +1,5 @@
-# Carrierwave Google Cloud
-An alternative to Fog for connecting Carrierwave to Google Cloud Storage.
+# CarrierWave Google Cloud
+An alternative to Fog for connecting CarrierWave to Google Cloud Storage.
 
 ## Installation
 Add this line to your application's Gemfile:

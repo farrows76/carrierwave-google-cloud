@@ -8,7 +8,7 @@ require 'rdoc/task'
 
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'Carrierwave::Google::Cloud'
+  rdoc.title    = 'CarrierWave::Google::Cloud'
   rdoc.options << '--line-numbers'
   rdoc.rdoc_files.include('README.md')
   rdoc.rdoc_files.include('lib/**/*.rb')
