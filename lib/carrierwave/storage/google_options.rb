@@ -12,7 +12,7 @@ module CarrierWave
       end
 
       def expiration_options(options = {})
-        uploader_expiration = uploader.google_authenticated_url_expiration
+        uploader_expiration = uploader.google_request_expiration
         { expires_in: uploader_expiration }.merge(options)
       end
 

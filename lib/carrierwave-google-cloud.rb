@@ -13,9 +13,9 @@ module CarrierWave
 
       add_config :google_attributes
       add_config :google_bucket
-      add_config :google_bucket_is_public
+      add_config :google_bucket_public
       add_config :google_credentials
-      add_config :google_authenticated_url_expiration
+      add_config :google_request_expiration
 
       configure do |config|
         config.storage_engines[:google] = 'CarrierWave::Storage::Google'

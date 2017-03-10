@@ -21,6 +21,7 @@ class CarrierWave::Storage::GoogleFile::Test < ActiveSupport::TestCase
 
   test "should return the retrieved file" do
     file = Object.new
+    @google_file.file = file
     assert_equal @google_file.retrieve.file, file
   end
 

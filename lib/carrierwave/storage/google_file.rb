@@ -13,24 +13,22 @@ module CarrierWave
       end
 
       def file
-        by_verifying_existence { @file ||= bucket.file(path) }
+        verify_file_exists { @file ||= bucket.file(path) }
         @file
       end
 
       alias to_file file
 
       def retrieve
-        by_verifying_existence { @file ||= bucket.file(path) }
+        verify_file_exists { @file ||= bucket.file(path) }
         self
       end
 
-      def by_verifying_existence(&block)
+      def verify_file_exists(&block)
         self.file_exists = true
         yield
-      rescue Exception => exception
-        if (exception.class == ::Google::Cloud::Error::NotFoundError) && (exception.message == 'Not Found')
-          self.file_exists = false
-        end
+      rescue ::Google::Cloud::Error::NotFoundError => e
+        self.file_exists = false if e.message == 'Not Found'
       end
 
       def attributes
@@ -79,7 +77,7 @@ module CarrierWave
 
       def url(options = {})
         return unless file_exists
-        uploader.google_bucket_is_public ? public_url : authenticated_url
+        uploader.google_bucket_public ? public_url : authenticated_url
       end
 
       def authenticated_url
