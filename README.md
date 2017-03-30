@@ -1,4 +1,6 @@
 # CarrierWave Google Cloud
+[![Build Status](https://travis-ci.org/farrows76/carrierwave-google-cloud.svg?branch=master)](https://travis-ci.org/farrows76/carrierwave-google-cloud)
+
 An alternative to Fog for connecting CarrierWave to Google Cloud Storage.
 
 ## Installation
